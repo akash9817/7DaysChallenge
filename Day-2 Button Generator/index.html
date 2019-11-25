@@ -1,0 +1,77 @@
+<html>
+<head>
+    <link rel=stylesheet href="./style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="main">
+        <form id="form">
+            <div>
+             <div id="btn-view">   
+            <button id="button" >Default Label</button>
+            </div>
+            <hr>
+          <div id="form-fields">  
+            <div class="row">
+            <div class="lbl">
+                <label for="btn-label">Button Label : </label>
+                <input id="btn-label" required>
+            </div>
+            <div class="lbl">
+                    <label for="btn-font-size">Font Size : </label>
+                    <input type="number" id="btn-font-size" class="lbl-num" value="16" min="8" max="50" required>
+            </div>
+            <div class="lbl">
+                    <label for="btn-font-color">Font Color : </label>
+                    <input type="color" id="btn-font-color" required >
+            </div>
+        </div>
+        <div class="row">
+                <div class="lbl">
+                    <label for="padding">Padding Top-Right-Botttom-Left : </label>
+                    <input type="number" id="btn-pad-top" class="lbl-num" value="1" min="0" max="24" required> -
+                    <input type="number" id="btn-pad-right" class="lbl-num" value="6" min="0" max="48" required> -
+                    <input type="number" id="btn-pad-bottom" class="lbl-num"value="1" min="0" max="24" required> -
+                    <input type="number" id="btn-pad-left" class="lbl-num" value="6" min="0" max="48" required>
+                </div>
+                <div class="lbl">
+                        <label for="btn-back-color">Background Color : </label>
+                        <input type="color" id="btn-back-color" required>
+                </div>
+        </div>
+            <div class="row">
+                    <div class="lbl">
+                            <label for="btn-border-color">Border Color : </label>
+                            <input type="color" id="btn-border-color" value="#dddddd" required>
+                    </div>
+                    <div class="lbl">
+                            <label for="btn-border-width">Border Width : </label>
+                            <input type="number" id="btn-border-width" class="lbl-num" value="0" min="0" max="50" required>
+                    </div>
+                    <div class="lbl">
+                            <label for="btn-border-radius">Border Radius : </label>
+                            <input type="number" id="btn-border-radius" class="lbl-num" value="0" min="0" max="50" required>
+                    </div>
+            </div>
+                <button id="generate">Generate code</button>
+            </div>
+        </form>
+    </div>
+    <div id="block">
+        <div id="box">
+              <a href="#" id="cancel"><i class="fa fa-remove"></i></a>  
+            <h2>HTML:</h2>
+            <strong id="html-code"></strong>
+            <h2>CSS:</h2>
+            <strong id="css-code"></strong>
+        </div>  
+</div>
+</div> 
+    
+    <script src="./script.js"></script>
+</body>
+</html>

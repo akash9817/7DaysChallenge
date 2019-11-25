@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main id="container">
+          <div id="game">
+              <div id="new-game">
+                <p id="new" class="icons"><span class="controls-i"><i class="fa fa-plus-circle"></i></span>NEW GAME</p>
+              </div>
+            <div class="players active" >
+                <div id="p1">
+                    <h2 class="name">PLAYER 1</h2><span class="dot"></span>
+                    <h3 class="main-score" >0</h3>
+                </div>
+                <div>
+                    <div class="current-box">
+                          <p class="cur">current</p>
+                          <p id="p1-cur-score" class="cur-score">0</p>  
+                    </div>
+                </div>
+            </div>
+            <div class="players" >
+                <div id="p2">
+                    <h2 class="name">PLAYER 2</h2><span></span>
+                    <h3 class="main-score">0</h3>
+                </div>
+                <div>
+                   <div class="current-box">
+                        <p class="cur">current</p>
+                        <p id="p1-cur-score" class="cur-score">0</p>  
+                    </div>
+                </div>
+            </div>
+            <div id=dice>
+                <img id="dice-img" src="img/dice-1.png">
+            </div>
+        <div id="controls">
+            <p id="roll" class="icons"><span class="controls-i"><i class="fa fa-refresh"></i></span>ROLL DICE</p>
+            <p id="hold" class="icons"><span class="controls-i"><i class="fa fa-pause"></i></span>HOLD</p>
+        </div>
+          </div>
+        </main>
+        <script src="./script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+body{
+    margin:0;
+    padding: 0;
+    background: url("https://wallpaperaccess.com/full/486567.png");
+    background-position: -24% 50%;
+    -moz-background-position:-24% 20%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+#container{
+    width: 50%;
+    position: absolute;
+    background: transparent;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card{
+    margin-bottom: 10px;
+    transition: all 1s;
+}
+/* .card:target{
+    height: 400px;a
+} */
+.title{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; 
+    background: white;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+.card p{
+    font-size: 120%;
+    margin: 0;
+}
+/* .x{
+    display: none;
+    transition: 1s;
+} */
+.details{
+    display: flex;
+    width: 100%;
+    height: 0px;
+    line-height: 0;
+    overflow: hidden;
+    /* padding: 10px; */
+    background: white;
+    transition: 1s;
+}
+.show{
+    height: 160px;
+}
+.details .image{
+    flex-basis:40%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.image img{
+    width: 100%;
+}
+.details .info{
+     flex-basis: 60%;
+    align-self: center;
+
+}
+table {
+    width: 100%;
+}
+table th{
+    text-align: left;
+}
+table td{
+    text-align: right;
+}
+table th,td{
+    
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+@-moz-document url-prefix() {
+body{
+      background-position: -24% 20%;
+  }
+}
+@media screen and (max-width:600px){
+    #container{
+        width: 90%;
+    }
+    .details{
+        flex-direction: column;
+    }
+    .show{
+        height:312px;
+    }
+}

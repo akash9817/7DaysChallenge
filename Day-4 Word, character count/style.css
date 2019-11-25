@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://wallpapercave.com/wp/wp2610900.jpg");
+}
+#box{
+    width: 60%;
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    border-radius: 6px 6px 0 0;
+}
+#board textarea{
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+#board textarea:focus{
+    outline: none;
+}
+#nav p{
+    color:black;
+}   

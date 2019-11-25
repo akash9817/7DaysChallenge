@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <div class="clock-main">
+        <img id="clock" src="./clock.png">
+        <svg class="hands" id="sec" height="170" width="300">
+                <line  x1="0" y1="0" x2="0" y2="170" style="stroke:rgb(255,0,0);stroke-width:3" />
+        </svg>
+        <svg class="hands" id="min" height="140" width="300">
+            <line x1="0" y1="0" x2="0" y2="140" style="stroke:rgb(255,0,0);stroke-width:6" />
+        </svg>
+        <svg class="hands" id="hour" height="110" width="300">
+            <line x1="0" y1="0" x2="0" y2="110" style="stroke:rgb(255,0,0);stroke-width:8" />
+        </svg>
+        </img>   
+        </div> 
+        </div>
+        <script>
+            var sec=document.getElementById("sec");
+            var min=document.getElementById("min");
+            var hour=document.getElementById("hour");
+             setInterval(()=>{
+                var date = new Date();
+                var ho =  date.getHours()/12;
+                var mi = date.getMinutes()/60;
+                var se = date.getSeconds()/60;
+                  sec.style.transform = `rotate(${se * 360}deg)`
+                 min.style.transform = `rotate(${mi * 360}deg)`;
+                 hour.style.transform = `rotate(${ho * 360}deg)`;
+             },1000)
+             console.log((19/12)*360)
+        </script>
+    </body>
+</html>

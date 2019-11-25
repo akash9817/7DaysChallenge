@@ -1,0 +1,110 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+#game{
+    width: 70%;
+    height: 85vh;
+    background: white;
+    display:flex;
+    position: relative;
+    border-radius: 10px;
+}
+.players{
+    flex-basis: 50%;
+    padding: 70px 80px;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+.active{
+     background: #efeeee;
+}
+.dot{
+    display:inline-block;
+    width: 10px;
+    height: 10px;
+    background: red;
+    margin-left: 20px;
+    border-radius: 5px;
+    vertical-align: super;
+}
+.name{
+    font-size: 2.3rem;
+    margin: 0;
+    display: inline-block;
+    font-weight: lighter;
+}
+.main-score{
+    margin: 0;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: #ff6363;
+}
+.current-box{
+    background: #ff6363;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+}
+.cur{
+    font-size: 24px;
+    margin: 0;
+}
+.cur-score{
+    font-size: 29px;
+    color: white;
+    margin:0;
+}
+#controls{
+    position: absolute;
+    bottom: 12.5%;
+    left: 43%;
+    font-size: 20px;
+    text-align: center;
+}
+.controls-i{
+    margin-right: 14px;
+}
+.icons{
+    color: #ff6363;
+}
+#roll:hover{
+    cursor: pointer;
+}
+#hold:hover{
+    cursor: pointer;
+}
+#new:hover{
+    cursor: pointer;
+}
+#new-game{
+    position: absolute;
+    top:5%;
+    left:42.5%;
+    font-size: 20px;
+}
+#dice{
+    position: absolute;
+    left:45%;
+    top:32%;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+#dice img{
+    width: 90px;
+    height: 90px;
+}
